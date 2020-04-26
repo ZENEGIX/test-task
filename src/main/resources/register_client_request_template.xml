@@ -1,0 +1,16 @@
+<soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope" xmlns:urn="urn:mFlow">
+    <soapenv:Header />
+    <soapenv:Body>
+        <urn:request>
+            <correlationId>${uuid}</correlationId>
+            <payload>
+                <first_name>${first_name}</first_name>
+                <last_name>${last_name}</last_name>
+                <patr_name>${patr_name}</patr_name>
+                <doc_number>${doc_number}</doc_number>
+                <doc_series>${doc_series}</doc_series>
+                <doc_issue_date>${doc_issue_date}</doc_issue_date>
+            </payload>
+        </urn:request>
+    </soapenv:Body>
+</soapenv:Envelope>
