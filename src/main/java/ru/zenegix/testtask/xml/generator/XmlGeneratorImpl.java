@@ -19,8 +19,8 @@ public class XmlGeneratorImpl implements XmlGenerator {
     private final PlaceholderService placeholderService;
 
     @Override
-    public String generateRegisterClientRequest(UUID uuid, PersonalData personalData) {
-        String template = xmlResolver.resolve(XmlTemplate.REGISTER_CLIENT_REQUEST);
+    public String generateDownloadFileRequest(UUID uuid, PersonalData personalData) {
+        String template = xmlResolver.resolve(XmlTemplate.DOWNLOAD_FILE_REQUEST);
         Map<String, Object> placeholderMap = new HashMap<>();
         placeholderMap.put("uuid", uuid);
         placeholderMap.put("first_name", personalData.getClientName());

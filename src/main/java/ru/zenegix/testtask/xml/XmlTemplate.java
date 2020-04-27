@@ -7,7 +7,7 @@ import lombok.Getter;
 @Getter
 public enum XmlTemplate {
 
-    REGISTER_CLIENT_REQUEST("register_client_request_template.xml");
+    DOWNLOAD_FILE_REQUEST("download_file_request_template.xml");
 
     private final String path;
 

@@ -7,12 +7,12 @@ import java.util.UUID;
 public interface XmlGenerator {
 
     /**
-     * Generate the xml register client request
+     * Generate the xml download file request
      *
      * @param uuid the uuid of the xml request
      * @param personalData client data for fill
      * @return filled xml request
      */
-    String generateRegisterClientRequest(UUID uuid, PersonalData personalData);
+    String generateDownloadFileRequest(UUID uuid, PersonalData personalData);
 
 }

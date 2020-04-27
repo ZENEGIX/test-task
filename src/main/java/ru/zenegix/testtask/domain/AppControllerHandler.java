@@ -19,7 +19,7 @@ public class AppControllerHandler {
 
     public CompletableFuture<DownloadResponse> download(DownloadRequest downloadRequest) {
         UUID uuid = UUID.randomUUID();
-        String xmlRequest = xmlGenerator.generateRegisterClientRequest(uuid, downloadRequest.getPersonalData());
+        String xmlRequest = xmlGenerator.generateDownloadFileRequest(uuid, downloadRequest.getPersonalData());
 
         return this.downloadService.download(uuid, xmlRequest)
                 .thenApply(DownloadResponse::new);
